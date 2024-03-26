@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.artanpg.data</groupId>
+    <artifactId>artan-data-build</artifactId>
+    <version>0.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>artan-data-build</name>
+    <description>Module to centralize common resources and configuration for Artan Data Maven builds.</description>
+    <url>https://github.com/artan-pg/artan-data-build</url>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>restless</id>
+            <name>Mohammad Yazdian</name>
+            <email>m.yazdian70@outlook.com</email>
+            <organization>Rajan Soft</organization>
+            <organizationUrl>https://github.com/artan-pg</organizationUrl>
+            <roles>
+                <role>Project lead</role>
+            </roles>
+            <timezone>+3:30</timezone>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/artan-pg/artan-data-build</url>
+        <connection>scm:git:https://github.com/artan-pg/artan-data-build.git</connection>
+        <developerConnection>scm:git:https://github.com/artan-pg/artan-data-build.git</developerConnection>
+    </scm>
+
+    <issueManagement>
+        <url>https://github.com/artan-pg/artan-data-build/issues</url>
+        <system>GitHub</system>
+    </issueManagement>
+
+    <properties>
+        <java.version>17</java.version>
+
+        <resource.delimiter>@</resource.delimiter>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.build.timestamp.format>yyyy-MM-dd HH:mmZ</maven.build.timestamp.format>
+    </properties>
+
+    <build>
+        <defaultGoal>clean compile package install</defaultGoal>
+    </build>
+
+    <modules>
+        <module>artan-data-parent</module>
+    </modules>
+</project>
