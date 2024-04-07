@@ -16,6 +16,7 @@
     <description>Global parent pom.xml to be used by Artan Data modules.</description>
 
     <properties>
+        <artan-data-commons.version>0.0.0-SNAPSHOT</artan-data-commons.version>
         <checkstyle.version>10.14.2</checkstyle.version>
 
         <maven-clean-plugin.version>3.3.2</maven-clean-plugin.version>
@@ -42,6 +43,16 @@
         <checkstyle-config-location>src/main/checkstyle/checkstyle.xml</checkstyle-config-location>
         <checkstyle-properties-location>src/main/checkstyle/checkstyle.properties</checkstyle-properties-location>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.github.artanpg.data.commons</groupId>
+                <artifactId>artan-data-commons</artifactId>
+                <version>${artan-data-commons.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <defaultGoal>clean install</defaultGoal>
